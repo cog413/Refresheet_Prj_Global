@@ -1,11 +1,26 @@
-# Stealth Excel Game - 프로젝트 구조 및 코드 내용
+# Refresheet_Prj_Global - 프로젝트 구조 및 코드 내용
 
-본 문서는 `stealth_excel_game` 프로젝트의 전체 디렉토리 구조와 각 파일의 소스 코드를 포함하고 있습니다. AI(제미나이 등)에게 프로젝트의 현재 상태를 파악시키기 위한 컨텍스트(Context) 제공 목적으로 작성되었습니다.
+## 🚨 Git Repository & Branching Guide (AI Agent 필독)
+
+본 프로젝트는 **글로벌 버전** 저장소입니다. 로컬에서 작업한 내용을 커밋하고 푸시할 때, 절대 국내 버전(`Refresheet_Prj`)으로 잘못 커밋하지 않도록 주의해야 합니다.
+
+* **Target Remote Repository**: `https://github.com/cog413/Refresheet_Prj_Global.git`
+* **Branch Strategy**:
+  * `main` 브랜치: 운영기 (Production) 환경. 배포 가능한 안정적인 버전만 포함합니다.
+  * `sub` 브랜치: 개발기 (Development) 환경. 새로운 기능 개발, 다국어 처리 등 테스트 목적의 코드를 푸시합니다.
+* **AI Prompt Commands Rule**:
+  * "메인서브 둘 다 해줘": 수정한 코드를 `sub` 브랜치와 `main` 브랜치 양쪽 모두에 커밋 & 푸시합니다.
+  * "서브만 해줘": 수정한 코드를 `sub` 브랜치에만 커밋 & 푸시합니다.
+  * 지시가 명확하지 않을 경우 기본적으로 `sub` 브랜치에서 작업하고 푸시합니다.
+
+---
+
+본 문서는 `Refresheet_Prj_Global` 프로젝트의 전체 디렉토리 구조와 각 파일의 소스 코드를 포함하고 있습니다. AI(제미나이 등)에게 프로젝트의 현재 상태를 파악시키기 위한 컨텍스트(Context) 제공 목적으로 작성되었습니다.
 
 ## 📂 디렉토리 구조
 
 ```text
-stealth_excel_game/
+Refresheet_Prj_Global/
 ├── CHANGELOG.md    # 버전별 변경 이력
 ├── index.html      # 엑셀 UI 및 게임 화면을 구성하는 메인 HTML
 ├── style.css       # 엑셀 스타일 및 게임 UI 테마 (다크모드 포함)
